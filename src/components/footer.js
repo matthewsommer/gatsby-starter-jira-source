@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
-  <footer>
-    <p>Built by <a href="https://mattsommer.io" target="_blank">Matt Sommer</a>
-    </p>
+const Footer = () => (
+  <footer className="footer">
+    <span className="text-muted">
+      Built by <a href="https://mattsommer.io" target="_blank">Matt Sommer</a>
+    </span>
   </footer>
 )
 
-export default Header
+export default Footer

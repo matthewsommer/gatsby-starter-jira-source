@@ -1,4 +1,16 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
+  margin-bottom: 60px;
   overflow-y: scroll;
   padding-left: 10em;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
 }
