@@ -12,9 +12,9 @@ export default function TasksPage({ data }) {
         const task = taskNode.node.jiraIssue;
         return (
           <div key={task.id}>
-            <h3 className="">
+            <h6 className="">
               <Link to={`/${slug}`} className="text-dark">{task.jiraFields.summary}</Link>
-            </h3>
+            </h6>
           </div>
         );
       })}
@@ -22,13 +22,13 @@ export default function TasksPage({ data }) {
   );
 }
 
-BlogPostsPage.propTypes = {
+TasksPage.propTypes = {
   data: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
 export const query = graphql`
     query TasksQuery {
-      tasks: allJiraIssue(filter: {status: {eq: "In Progress"}}) {
+      tasks: allJiraIssue {
             edges {
                 node {
                     slug
