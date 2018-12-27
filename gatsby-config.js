@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'My Gatsby Jira Integrated Website',
   },
   plugins: [
-    'gatsby-plugin-react-helmet', 
+    'gatsby-plugin-react-helmet',
     {
       resolve: "gatsby-source-jira",
       options: {
-        host: "jira.mattsommer.io",
+        host: "timetopretend.atlassian.net",
         epic_field_id: "customfield_10009",
       },
     }]
