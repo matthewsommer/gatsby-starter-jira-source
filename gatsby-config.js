@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'My Gatsby Jira Integrated Website',
+    title: 'Welcome to a Gatsby website powered by Jira!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
