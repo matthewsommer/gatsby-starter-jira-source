@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 export default function Task({ data }) {
   const { jiraIssue: task } = data.jiraIssue;

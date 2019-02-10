@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 export default function TasksPage({ data }) {
     const tasks = data.tasks.edges;

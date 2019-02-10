@@ -5,12 +5,15 @@
   "author": "Matt Sommer <matthew.sommer@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.2.1",
-    "gatsby": "^1.9.279",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby": "^2.0.118",
+    "gatsby-link": "^2.0.10",
+    "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-source-jira": "^1.0.2",
+    "graphql": "^14.1.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

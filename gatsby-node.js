@@ -1,8 +1,8 @@
 const path = require(`path`);
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
+exports.createPages = ({ graphql, actions }) => {
   console.log("Plugin Jira Source: Creating pages");
-  const { createPage } = boundActionCreators;
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(`
         {
