@@ -1,17 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../components/header'
-import Footer from '../components/footer';
+import Header from './header'
+import Footer from './footer';
 import { StaticQuery, graphql } from 'gatsby';
-import './index.css'
 
-Layout.propTypes = {
-  children: PropTypes.func,
-}
-
-export default () => (
+export default ({ children }) => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
@@ -32,14 +26,16 @@ export default () => (
           ]}
         />
         <div className="container">
-          <div className="row">
-            <Header siteTitle={data.site.siteMetadata.title} />
-          </div>
-          <div className="row">
-            {children()}
-          </div>
-          <div className="row">
-            <Footer />
+          <div className="col offset-md-1">
+            <div className="row">
+              <Header siteTitle={data.site.siteMetadata.title} />
+            </div>
+            <div className="row">
+              {children}
+            </div>
+            <div className="row">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
