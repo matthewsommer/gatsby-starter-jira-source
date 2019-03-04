@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Matt Sommer <matthew.sommer@gmail.com>",
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.0.118",
     "gatsby-link": "^2.0.10",
     "gatsby-plugin-react-helmet": "^3.0.6",
