@@ -5,7 +5,7 @@
   "author": "Matt Sommer <matthew.sommer@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gatsby": "^2.0.118",
+    "gatsby": "^2.32.13",
     "gatsby-link": "^2.0.10",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-source-jira": "^1.0.2",
